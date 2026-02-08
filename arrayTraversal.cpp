@@ -6,8 +6,8 @@ using namespace std;
 int main()
 {
     int LA[] = {1, 3, 5, 7, 8};
-    int item = 10, k = 3, n = 5;
-    int i = 0, j = n;
+    int n = 5;
+    int i = 0;
     cout << "The original array elements are:\n";
     for (i = 0; i < n; i++)
     {
@@ -15,3 +15,4 @@ int main()
     }
     return 0;
 }
+
