@@ -16,8 +16,8 @@ int main()
     for (i = 1; i < n; i++)
     {
         LA[i] = LA[i + 1];
-        n = n - 1;
     }
+    n = n - 1;
 
     cout << "The array elements after deletion:" << endl;
     for (i = 0; i < n; i++)
@@ -25,3 +25,4 @@ int main()
         cout << "LA[" << i << "]:" << LA[i] << endl;
     }
 }
+
