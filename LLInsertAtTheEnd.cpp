@@ -1,5 +1,4 @@
-//Insert new nodes at the end
-
+// Insert new nodes at the end
 #include <iostream>
 using namespace std;
 
@@ -50,14 +49,19 @@ int main()
 {
     Node *start = NULL;
 
-    // Insert some nodes
+    int n, value;
 
-    insertEnd(start, 10);
-    insertEnd(start, 20);
-    insertEnd(start, 30);
-    insertEnd(start, 40);
+    cout << "Enter number of nodes: ";
+    cin >> n;
 
-    cout << "Traversing the linked list:";
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter value: ";
+        cin >> value;
+        insertEnd(start, value);
+    }
+
+    cout << "Linked List after insertions: ";
     traverse(start);
 
     return 0;
